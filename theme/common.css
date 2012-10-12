@@ -1,0 +1,685 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
+   height: 101%;
+}
+
+body {
+	background: url("{T_THEME_PATH}/images/bg.jpg") fixed #c8b9a2;
+	font: 62.5% Arial, Helvetica, sans-serif;
+}
+
+
+h2 {
+	/* Forum header titles */
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	/* Sub-headers (also used as post headers, but defined later) */
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid;
+	margin-bottom: 3px;
+	padding-bottom: 2px;
+	font-size: 11px;
+	color: #fff;
+}
+
+h4 {
+	/* Forum and topic list titles */
+	font-family: Arial, Verdana, Helvetica, Sans-serif;
+	font-size: 14px;
+}
+
+p {
+	line-height: 1.4em;
+	font-size: 12px;
+	margin-bottom: 1.5em;
+}
+
+img {
+	border-width: 0;
+}
+
+hr {
+	/* Also see tweaks.css */
+	border: 0 none #FFF;
+	border-top: 1px solid #CCC;
+	height: 1px;
+	margin: 5px 0;
+	display: block;
+	clear: both;
+}
+
+hr.spacer {
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+hr.dashed {
+	border-top: 1px dashed #CCC;
+	margin: 10px 0;
+}
+
+hr.divider {
+	display: none;
+}
+
+p.right {
+	text-align: right;
+}
+
+/* Structure
+---------------------------------------- */
+#wrapper {
+	width: 1000px;
+	background-color: rgba(0, 0, 0, 0.298);
+	margin: auto;
+	border-radius: 0 0 3px 3px;
+}
+
+#simple-wrapper {
+	padding: 2px 20px;
+}
+
+#banner {
+	background: url("{T_THEME_PATH}/images/header.jpg") no-repeat #967353;
+	height: 200px;
+	position: relative;
+}
+
+#dashboard, .toolbox {
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.65);
+	border: 1px solid #000;
+	border-radius: 3px;
+	color: #CCCCCC;
+}
+
+.toolbox {
+	margin-bottom: 30px;
+}
+
+#container {
+	padding: 5px 25px 30px;
+	font-family: Arial, Tahoma, Helvetica , sans-serif;
+}
+
+#info-section, .panel {
+	padding: 10px;
+	background-color: rgba(244, 236, 226, 0.8);
+	border: 1px solid #48361d;
+	border-radius: 3px;
+}
+
+.panel {
+	margin-bottom: 30px;
+}
+
+#footer {
+	color: #56544d;
+}
+
+/* Top bar
+---------------------------------------- */
+#search-box {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#quick-search #keywords {
+	width: 165px;
+	padding: 2px;
+	cursor: text;
+}
+
+#last-visit {
+	color: #CCC;
+	margin: 5px 0;
+}
+
+/* Dashboard
+---------------------------------------- */
+
+#dashboard {
+	margin: 30px 25px 0;
+	position: relative;
+}
+
+
+#dashboard ul {
+	list-style: none;
+	font-size: 1.15em;
+}
+
+#dashboard li {
+	display: inline;
+}
+
+/* Name and description
+---------------------------------------- */
+#site-description {
+	white-space: nowrap;
+}
+
+#site-description h1, #site-description p {
+	text-shadow: 1px 3px 5px #333;
+}
+
+#site-description h1 a {
+	/* Forum name */
+	background: url("{T_THEME_PATH}/images/logo.png") no-repeat;
+	display: inline-block;
+	height: 128px;
+	width: 588px;
+	position: absolute;
+	left: 16px;
+	top: 0;
+	text-indent: -999999px;
+}
+
+#site-description p {
+	text-indent: -999999px; /* just remove this line in case you need the description */
+	font-size: 1.2em;
+	color: #fff;
+	position: absolute;
+	top: 128px;
+	left: 26px;
+}
+
+/* Nav (main menu)
+---------------------------------------- */
+
+#nav {
+	background-color: rgba(255, 255, 255, 0.506);
+	border: 1px solid #999999;
+	border-radius: 3px;
+	bottom: 25px;
+	left: 25px;
+	padding: 5px;
+	position: absolute;
+	font: 12pt Arial;
+	font-weight: 700;
+}
+
+#nav li {
+	list-style-type: none;
+	display: inline;
+	
+}
+
+
+/* Banner image credit
+---------------------------------------- */
+
+#image-credit {
+	background-color: rgba(0, 0, 0, 0.298);
+	bottom: 0px;
+	color: #999999;
+	font-family: arial;
+	font-size: 8pt;
+	padding: 0px 2px;
+	position: absolute;
+	right: 0px;
+	margin: 0;
+}
+
+#image-credit a, #image-credit a:visited {
+	color: #9999CC;
+}
+ #image-credit a:hover, #image-credit a:visited:hover {
+ 	color: #EEEEEE;
+ 	text-decoration: none;
+}
+
+/* Footer
+---------------------------------------- */
+#copyright p {
+	margin: 0;
+	font-size: 10px;
+	line-height: 14px;
+	text-align: center;
+}
+
+#copyright {
+	padding: 10px 0;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.navbar {
+	background-color: #ebebeb;
+	padding: 0 10px;
+}
+
+.panel {
+	margin-bottom: 30px;
+}
+
+.forabg {
+	background: #b1b1b1 none repeat-x 0 0;
+	margin-bottom: 4px;
+	padding: 0 5px;
+	clear: both;
+}
+
+.post {
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+
+.post:target h3 a {
+	color: #000000;
+}
+
+.bg1	{ background-color: #f7f7f7;}
+.bg2	{ background-color: #f2f2f2; }
+.bg3	{ background-color: #ebebeb; }
+
+.rowbg {
+	margin: 5px 5px 2px 5px;
+}
+
+.ucprowbg {
+	background-color: #e2e2e2;
+}
+
+.fieldsbg {
+	/*border: 1px #DBDEE2 solid;*/
+	background-color: #eaeaea;
+}
+
+span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span {
+	font-size: 1px;
+	line-height: 1px;
+	display: block;
+	height: 5px;
+	background-repeat: no-repeat;
+}
+
+span.corners-top {
+	background-image: none;
+	background-position: 0 0;
+	margin: 0 -5px;
+}
+
+span.corners-top span {
+	background-image: none;
+	background-position: 100% 0;
+}
+
+span.corners-bottom {
+	background-image: none;
+	background-position: 0 100%;
+	margin: 0 -5px;
+	clear: both;
+}
+
+span.corners-bottom span {
+	background-image: none;
+	background-position: 100% 100%;
+}
+
+.headbg span.corners-bottom {
+	margin-bottom: -1px;
+}
+
+.post span.corners-top, .post span.corners-bottom, .panel span.corners-top, .panel span.corners-bottom, .navbar span.corners-top, .navbar span.corners-bottom {
+	margin: 0 -10px;
+}
+
+/* Horizontal lists
+----------------------------------------*/
+ul.linklist {
+	display: block;
+	margin: 0;
+}
+
+ul.linklist li {
+	display: block;
+	list-style-type: none;
+	float: left;
+	width: auto;
+	margin-right: 5px;
+	font-size: 12px;
+	line-height: 2.2em;
+}
+
+ul.linklist li.rightside, p.rightside {
+	float: right;
+	margin-right: 0;
+	margin-left: 5px;
+	text-align: right;
+}
+
+ul.navlinks {
+	padding-bottom: 1px;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #FFFFFF;
+	font-weight: bold;
+}
+
+ul.leftside {
+	float: left;
+	margin-left: 0;
+	margin-right: 5px;
+	text-align: left;
+}
+
+ul.rightside {
+	float: right;
+	margin-left: 5px;
+	margin-right: -5px;
+	text-align: right;
+}
+
+/* Table styles
+----------------------------------------*/
+table.table1 {
+	/* See tweaks.css */
+}
+
+#ucp-main table.table1 {
+	padding: 2px;
+}
+
+table.table1 thead th {
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.6em;
+	font-size: 1em;
+	padding: 0 0 4px 3px;
+}
+
+table.table1 thead th span {
+	padding-left: 7px;
+}
+
+table.table1 tbody tr {
+	border: 1px solid #cfcfcf;
+}
+
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	background-color: #f6f6f6;
+	color: #000;
+}
+
+table.table1 td {
+	color: #6a6a6a;
+	font-size: 1.1em;
+}
+
+table.table1 tbody td {
+	padding: 7px 5px;
+	border-top: 1px solid #FAFAFA;
+}
+
+table.table1 tbody th {
+	padding: 5px;
+	border-bottom: 1px solid #000000;
+	text-align: left;
+	color: #333333;
+	background-color: #FFFFFF;
+}
+
+/* Specific column styles */
+table.table1 .name		{ text-align: left; }
+table.table1 .posts		{ text-align: center !important; width: 7%; }
+table.table1 .joined	{ text-align: left; width: 19%; }
+table.table1 .active	{ text-align: left; width: 19%; }
+table.table1 .mark		{ text-align: center; width: 7%; }
+table.table1 .info		{ text-align: left; width: 25%; }
+table.table1 .info div	{ width: 100%; white-space: normal; overflow: hidden; }
+table.table1 .autocol	{ line-height: 2em; white-space: nowrap; }
+table.table1 thead .autocol { padding-left: 1em; }
+
+table.table1 span.rank-img {
+	float: right;
+	width: auto;
+}
+
+table.info td {
+	padding: 3px;
+}
+
+table.info tbody th {
+	padding: 3px;
+	text-align: right;
+	vertical-align: top;
+	color: #000000;
+	font-weight: normal;
+}
+
+/* Misc layout styles
+---------------------------------------- */
+/* column[1-2] styles are containers for two column layouts 
+   Also see tweaks.css */
+.column1 {
+	float: left;
+	clear: left;
+	width: 49%;
+}
+
+.column2 {
+	float: right;
+	clear: right;
+	width: 49%;
+}
+
+/* General classes for placing floating blocks */
+.left-box {
+	float: left;
+	width: auto;
+	text-align: left;
+}
+
+.right-box {
+	float: right;
+	width: auto;
+	text-align: right;
+}
+
+dl.details {
+	/*font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;*/
+	font-size: 1.1em;
+}
+
+dl.details dt {
+	float: left;
+	clear: left;
+	width: 30%;
+	text-align: right;
+	color: #000000;
+	display: block;
+}
+
+dl.details dd {
+	margin-left: 0;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	color: #828282;
+	float: left;
+	width: 65%;
+}
+
+/* Pagination
+---------------------------------------- */
+.pagination {
+	height: 1%; /* IE tweak (holly hack) */
+	width: auto;
+	text-align: right;
+	float: right;
+	line-height: 28px;
+	vertical-align: bottom;
+}
+
+.pagination span.page-sep {
+	display: none;
+}
+
+li.pagination {
+	margin-top: 0;
+}
+
+.pagination strong, .pagination b {
+	font-weight: normal;
+}
+
+.pagination span strong {
+	padding: 0 2px;
+	margin: 0 2px;
+	font-weight: normal;
+	color: #FFFFFF;
+	background-color: #bfbfbf;
+	border: 1px solid #bfbfbf;
+	font-size: 0.9em;
+}
+
+.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active {
+	font-weight: normal;
+	text-decoration: none;
+	color: #747474;
+	margin: 0 2px;
+	padding: 0 2px;
+	background-color: #eeeeee;
+	border: 1px solid #bababa;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+.pagination span a:hover {
+	border-color: #d2d2d2;
+	background-color: #d2d2d2;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.pagination img {
+	vertical-align: middle;
+}
+
+/* Pagination in viewforum for multipage topics */
+.row .pagination {
+	display: block;
+	float: right;
+	width: auto;
+	margin-top: 0;
+	padding: 1px 0 1px 15px;
+	font-size: 0.9em;
+	background: none 0 50% no-repeat;
+}
+
+.row .pagination span a, li.pagination span a {
+	background-color: #FFFFFF;
+}
+
+.row .pagination span a:hover, li.pagination span a:hover {
+	background-color: #d2d2d2;
+}
+
+/* Miscellaneous styles
+---------------------------------------- */
+#forum-permissions {
+	float: right;
+	width: auto;
+	padding-left: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.copyright {
+	padding: 5px;
+	text-align: center;
+	color: #555555;
+}
+
+.small {
+	font-size: 0.9em !important;
+}
+
+.titlespace {
+	margin-bottom: 15px;
+}
+
+.headerspace {
+	margin-top: 20px;
+}
+
+.error {
+	color: #bcbcbc;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px !important;
+	padding: 5px 7px;
+}
+
+.reported {
+	background-color: #f7f7f7;
+}
+
+li.reported:hover {
+	background-color: #ececec;
+}
+
+div.rules {
+	background-color: #ececec;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+	line-height: 1.3em;
+	font-size: 11px;
+	color: #bcbcbc;
+}
+
+.rules-header {
+	margin-bottom: 4px;
+	display: block;
+}
+
+div.rules ul, div.rules ol {
+	margin-left: 20px;
+}
+
+p.rules {
+	background-color: #f3dddd;
+	border: 1px solid #deb7b7;
+	background-image: none;
+	padding: 5px 8px;
+	margin-top: 8px;
+	margin-bottom: 6px;
+}
+
+p.rules img {
+	vertical-align: middle;
+}
+
+p.rules a {
+	vertical-align: middle;
+	clear: both;
+}
+
+#top {
+	position: absolute;
+	top: -20px;
+}
+
+.clear {
+	display: block;
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	background: transparent;
+}
